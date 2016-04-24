@@ -1,0 +1,59 @@
+@import "_constants";
+@import "_fonts";
+
+
+.header {
+	color: #fff;
+	background-color: $bg_color;
+	overflow: hidden;
+	.logo {
+		float: left;
+		a {
+			height: 44px;
+			display: block;
+		}
+	}
+	.nav {
+		float: left;
+		width: 71%;
+		margin: 0 auto;
+    	text-align:center; 
+		ul>li {
+			display: inline-block;
+			a { 
+				display: block;
+				padding: 15px 21px 0px 15px;
+				font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;;
+				font-size: 15px;
+		    	text-decoration: none;
+		    	color: $link_color;
+		    	&:hover {
+		    		color: #27ae60;
+		    	}
+			}
+		}
+	}
+	.button {
+		display: block;
+		float: right;
+		margin: 4px 1px 0 0;
+		padding: 10px 20px 10px 22px;  
+		font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;;
+		font-size: 15px;
+		@include border-radius(5px);
+		@include background-image(#27ae60, #239d56);	
+		color: $link_color;	
+		text-transform: uppercase;
+		text-decoration: none;		
+		&:hover {
+			@include background-image(#36c773, #31b367);
+		}
+	}
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}

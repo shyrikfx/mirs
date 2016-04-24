@@ -1,0 +1,44 @@
+@import "_constants";
+@import "_fonts";
+
+.content {
+	margin-top: 39px;
+	margin-bottom: 75px;
+	.text {
+		padding-top: 8px;
+		width: 460px;
+		float: left;
+		font-family: "Roboto-Light", Arial, Helvetica, sans-serif;;
+		font-size: 35px;
+		line-height: 60px;
+		color: #2c3e50;
+		h1 {
+			margin-bottom: 15px;			
+		}
+		p {
+			font-size: 15px;
+			line-height: 25px;
+			color: #444;
+		}
+	}
+	.foto {
+		float: right;
+		width: 380px;
+		height: 480px;
+		span {
+			font-family: "Roboto-Light", Arial, Helvetica, sans-serif;;
+			font-size: 11px;
+			color: #2c3e50;
+		}
+		img {
+			margin-top: 7px;
+		}
+	}
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
